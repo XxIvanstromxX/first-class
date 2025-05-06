@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/proceso" method="POST">
+
+        <label>Nombre:</label>
+        <input type="text" name="nombre" required maxlength="100" minlength="10">
+        <br>
+        <br>
+        <label>Correo:</label>
+        <input type="email" name="correo" required>
+        <br>
+        <br>
+        <label>Contraseña:</label>
+        <input type="password" name="clave" required>
+        <br>
+        <br>
+        <label>Edad</label>
+        <input type="number" name="edad" min="18" max="100" required>
+        <br>
+        <br>
+        <label>Enviar</label>
+        <input type="submit" value="Enviar">
+        <br>
+        <br>
+        <label>Deja tu comentario:</label>
+        <textarea name="comentario" rows="4" cols="30" maxlength="10"></textarea>
+        <br>
+        <br>
+        <label>
+            <select name="pais" id="pais">
+                <option value="Argentina">Argentina</option>
+                <option value="Brasil">Brasil</option>
+                <option value="Chile">Chile</option>
+                <option value="Uruguay">Uruguay</option>
+            </select>
+        </label>
+        <br>
+        <br>
+        <label>Género: </label>
+        <input type="radio" name="genero" value="Masculino">Masculino
+        <input type="radio" name="genero" value="Femenino">Femenino
+        <br>
+        <br>
+        <label>Lenguajes: </label>
+        <input type="checkbox" name="lenguajes" value="Javascript">Javascript
+        <input type="checkbox" name="lenguajes" value="Python">Python
+        <input type="checkbox" name="lenguajes" value="Java">Java
+
+    </form>
+</body>
+</html>
