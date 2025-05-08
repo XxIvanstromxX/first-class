@@ -8,31 +8,50 @@
 <body>
     <form action="/proceso" method="POST">
 
-        <label>Nombre:</label>
+        <label for="nombre">Nombre:</label>
         <input type="text" name="nombre" required maxlength="100" minlength="10">
+
         <br>
         <br>
-        <label>Correo:</label>
+
+        <label for="correo">Correo:</label>
         <input type="email" name="correo" required>
+
         <br>
         <br>
-        <label>Contraseña:</label>
+
+        <label for="clave">Contraseña:</label>
         <input type="password" name="clave" required>
+
         <br>
         <br>
-        <label>Edad</label>
+
+        <label for="edad">Edad</label>
         <input type="number" name="edad" min="18" max="100" required>
+
         <br>
         <br>
-        <label>Enviar</label>
-        <input type="submit" value="Enviar">
+
+        <label>Numero telefonico:</label>
+        <input type="tel" name="telefono" required>
+
         <br>
         <br>
+
+        <label for="enviar">Enviar</label>
+        <button type="submit" name="enviar" value="Enviar">Enviar</button>
+
+        <br>
+        <br>
+
         <label>Deja tu comentario:</label>
-        <textarea name="comentario" rows="4" cols="30" maxlength="10"></textarea>
+        <textarea name="comentario" rows="4" cols="30" maxlength="100"></textarea>
+
+
         <br>
         <br>
-        <label>
+
+        <label for="pais"> Selecciona tu pais
             <select name="pais" id="pais">
                 <option value="Argentina">Argentina</option>
                 <option value="Brasil">Brasil</option>
@@ -40,13 +59,17 @@
                 <option value="Uruguay">Uruguay</option>
             </select>
         </label>
+
         <br>
         <br>
-        <label>Género: </label>
+
+        <label for="genero">Género: </label>
         <input type="radio" name="genero" value="Masculino">Masculino
         <input type="radio" name="genero" value="Femenino">Femenino
+
         <br>
         <br>
+        
         <label>Lenguajes: </label>
         <input type="checkbox" name="lenguajes" value="Javascript">Javascript
         <input type="checkbox" name="lenguajes" value="Python">Python
