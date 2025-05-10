@@ -11,13 +11,14 @@ body{
 }
 
 .secundario{
-    font-size: xx-large;
+    font-size: 3rem;
     text-align: center;
 }
 
 .content{
     margin: 0;
     padding: 40px;
+    background-color: red;
     text-align: center;
 }
 
