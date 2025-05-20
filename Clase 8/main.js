@@ -5,6 +5,7 @@ input.oninput = function(){
     document.body.style.backgroundColor = input.value;
 };
 
-const boton = document.addEventListener('click', () => {
-    document.body.style.backgroundColor = "green";
-})
+input.onchange = function(){
+    console.log(input.value);
+}
+
